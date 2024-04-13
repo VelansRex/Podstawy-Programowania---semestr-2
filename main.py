@@ -1,16 +1,15 @@
-# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def add_string(str1):
+    length = len(str1)
 
+    if length > 2:
+        if str1[-3:] == 'ing':
+            str1 += 'ly'
+        else:
+            str1 += 'ing'
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    return str1
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(add_string('ab'))
+print(add_string('abc'))
+print(add_string('string'))
