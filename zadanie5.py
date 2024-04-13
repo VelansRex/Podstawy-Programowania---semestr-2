@@ -8,7 +8,7 @@ def not_poor(string1):
 
     spoor = string1.find('poor')
 
-    if snot > spoor and snot > 0 and spoor > 0:
+    if spoor > snot and snot > 0 and spoor > 0:
         string1 = string1.replace(string1[snot:(spoor+4)], 'good')
         return string1
     else:
